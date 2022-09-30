@@ -1,0 +1,289 @@
+:root {
+    --dark-grey: #888;
+    --color-grey: #f1f1f1;
+    --light-blue: #CDF0EA;
+    --dark-blue: #1363DF;
+    --light-orange: #FFF4CF;
+    --dark-orange: #FF9F29;
+    --light-green: #CDF2CA;
+    --dark-green: #61B15A;
+    --ligth-red: #F5EDDC;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.align-center {
+    align-items: center;
+}
+
+.j-content {
+    justify-content: space-between;
+}
+
+.space-evenly {
+    justify-content: space-evenly;
+}
+
+.flex-component {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Start margin and padding */
+
+.mt-0 {
+    margin-top: 0;
+}
+
+.mt-2 {
+    margin-top: 2px;
+}
+
+.mt-25 {
+    margin-top: 25px;
+}
+
+.mt-10 {
+    margin-top: 10px;
+}
+
+.ml-10 {
+    margin-left: 10px;
+}
+
+.mr-10 {
+    margin-right: 10px;
+}
+
+.m-b-30 {
+    margin-bottom: 30px;
+}
+
+.p-t-10 {
+    padding-top: 10px;
+}
+
+.m-20 {
+    margin: 20px;
+}
+
+.p-5 {
+    padding: 5px;
+}
+
+.p-10 {
+    padding: 10px;
+}
+
+.p-20 {
+    padding: 20px;
+}
+
+.p-15 {
+    padding: 15px;
+}
+
+.pr-10 {
+    padding-right: 10px;
+}
+
+/* Start Positions */
+.txt-center {
+    text-align: center;
+}
+
+.p-relative {
+    position: relative;
+}
+
+.p-absolute {
+    position: absolute;
+}
+
+/* Start colors */
+.c-black {
+    color: black;
+}
+
+.c-white {
+    color: white;
+}
+
+.c-grey {
+    color: var(--dark-grey);
+}
+
+.c-red {
+    color: red;
+}
+
+.bg-red {
+    background-color: red;
+}
+
+.bg-light-red {
+    background-color: var(--ligth-red);
+}
+
+.bg-twitter {
+    background-color: #1DA1F2;
+}
+
+.c-twitter {
+    color: #1DA1F2;
+}
+
+.bg-facebook {
+    background-color: #3b5998;
+}
+
+.c-facebook {
+    color: #3b5998;
+}
+
+.bg-youtube {
+    background-color: #FF0000;
+}
+
+.c-youtube {
+    color: #FF0000;
+}
+
+.bg-linkedin {
+    background-color: #0077b5;
+}
+
+.c-linkedin {
+    color: #0077b5;
+}
+
+/* blue */
+.c-ligth-blue {
+    color: var(--light-blue);
+}
+
+.c-dark-blue {
+    color: var(--dark-blue);
+}
+
+.bg-ligth-blue {
+    background-color: var(--light-blue);
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+
+/* orange */
+.c-ligth-orange {
+    color: var(--light-blue);
+}
+
+.c-dark-orange {
+    color: var(--dark-orange);
+}
+
+.bg-ligth-orange {
+    background-color: var(--light-orange);
+}
+
+.bg-dark-orange {
+    background-color: var(--dark-orange);
+}
+
+/* green */
+.c-ligth-green {
+    color: var(--light-green);
+}
+
+.c-dark-green {
+    color: var(--dark-green);
+}
+
+.bg-ligth-green {
+    background-color: var(--light-green);
+}
+
+.bg-dark-green {
+    background-color: var(--dark-green);
+}
+
+/* End grren */
+
+.bg-white {
+    background-color: white;
+}
+
+.bg-dark-blue {
+    background-color: var(--dark-blue);
+}
+
+.bg-grey {
+    background-color: var(--color-grey);
+}
+
+/* Start font size */
+.fs-3 {
+    font-size: 3px;
+}
+
+.fs-10 {
+    font-size: 10px;
+}
+
+.fs-12 {
+    font-size: 12px;
+}
+
+.fs-14 {
+    font-size: 14px;
+}
+
+.fs-15 {
+    font-size: 15px;
+}
+
+.f-weight {
+    font-weight: normal;
+}
+
+.f-weight-bold {
+    font-weight: bold;
+}
+
+/* Start borders */
+.rad-6 {
+    border-radius: 6px;
+}
+
+.b-none {
+    border: none;
+}
+
+.b-top {
+    border-top: 1px solid var(--color-grey);
+}
+
+/* Start width & heigth */
+
+.full-width {
+    width: 100%;
+}
+
+.line-height {
+    line-height: 1.8;
+}
+
+/* Start display */
+
+.d-block {
+    display: block;
+}
+
+.block-component {
+    display: block;
+    width: fit-content;
+}

@@ -1,0 +1,607 @@
+:root {
+    --dark-grey: #888;
+    --color-grey: #f1f1f1;
+    --light-blue: #CDF0EA;
+    --dark-blue: #1363DF;
+    --light-orange: #FFF4CF;
+    --dark-orange: #FF9F29;
+    --light-green: #CDF2CA;
+    --dark-green: #61B15A;
+    --border: #D8D8D8;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+:focus {
+    outline: none;
+}
+
+/* Start sidebar */
+.page {
+    background-color: #f1f5f9;
+    min-height: 100vh;
+}
+
+.page .sidebar {
+    width: 250px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 3px;
+}
+
+.page .sidebar h3::before {
+    position: absolute;
+    content: "";
+    width: calc(60px + 20px);
+    height: 3px;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+    bottom: -15px;
+}
+
+.page .sidebar h3::after {
+    position: absolute;
+    content: "";
+    width: 13px;
+    height: 13px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translate(-50%);
+    background-color: black;
+    bottom: -24px;
+    border: 5px solid white;
+}
+
+.page .sidebar .active {
+    display: block;
+    margin-top: 40px;
+    background-color: #f6f6f6;
+}
+
+/* End Sidebar */
+/* Start content  - title*/
+
+.page .content .title .search input::placeholder {
+    font-size: 13px;
+}
+
+.page .content .title .search::before {
+    font-family: "Font Awesome 6 Free";
+    content: "\f002";
+    font-weight: 900;
+    position: absolute;
+    left: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 14px;
+    color: var(--color-grey);
+}
+
+.page .content .title input {
+    border: 1px solid #ccc;
+    border-radius: 14px;
+    padding-left: 35px;
+}
+
+.page .content .notifaction::before {
+    position: absolute;
+    content: "";
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background-color: red;
+    right: 10px;
+    top: -2px;
+}
+
+.page .content i {
+    display: block;
+    font-size: 18px;
+    margin-right: 15px;
+}
+
+.page .content .icons img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+
+/* End content  - Title*/
+/* Start content -  text - welcome*/
+.content>h3 {
+    margin-left: 10px;
+    margin-bottom: 30px;
+    position: relative
+}
+
+.content>h3::before,
+.content>h3::after {
+    position: absolute;
+    content: "";
+    height: 2px;
+    left: 0;
+    bottom: -8px;
+    background-color: white;
+}
+
+.content>h3::before {
+    width: 70px;
+}
+
+.content>h3::after {
+    width: 30px;
+    background-color: black;
+}
+
+.text {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 10px;
+}
+
+.text .box {
+    background-color: white;
+    overflow: hidden;
+}
+
+.text .welcome .top img {
+    width: 120px;
+}
+
+.text .welcome .bottom img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    top: -20px;
+    border: 2px solid white;
+    margin-left: 15px;
+}
+
+.text .welcome .bottom .bottom-content span {
+    display: block;
+}
+
+.text .welcome .bottom a {
+    float: right;
+    padding: 5px 10px;
+    margin: 30px 10px 50px 0;
+}
+
+.text .welcome .bottom .bottom-content {
+    padding-top: 15px;
+}
+
+/* End content -  text -welcome*/
+/* Start content -  text - Drafts*/
+.text .draft input,
+.text .draft textarea {
+    width: 100%;
+    background-color: var(--color-grey);
+    border: none;
+}
+
+.text .draft textarea {
+    margin-top: 10px;
+    height: 120px;
+    resize: none;
+}
+
+.text .draft input::placeholder,
+.text .draft textarea::placeholder {
+    font-size: 10px;
+    padding-top: 10px;
+    padding-left: 10px;
+}
+
+.text .draft a {
+    float: right;
+    padding: 5px 10px;
+    margin: 10px 10px 10px 0;
+}
+
+/* End content -  text - Drafts*/
+
+/* Start Content - text - Yearly Targets */
+
+.text .Target .box-content .yearlyTarget i {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+
+.text .Target .box-content .yearlyTarget i::before {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress {
+    flex: 1;
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress h4 {
+    padding-top: 4px;
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress.project {
+    margin: 15px 0;
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress .progress {
+    margin-top: -6px;
+    height: 3px;
+    position: relative;
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress .progress span {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress .progress span::before {
+
+    content: attr(data-progress);
+    position: absolute;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    top: -35px;
+    right: -18px;
+    font-size: 12px;
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress.money .progress span::before {
+    background-color: var(--dark-blue);
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress.project .progress span::before {
+    background-color: var(--dark-orange);
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress.team .progress span::before {
+    background-color: var(--dark-green);
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress .progress span::after {
+    content: "";
+    position: absolute;
+    border: 8px solid;
+    right: -8px;
+    top: -14px;
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress.money .progress span::after {
+    border-color: var(--dark-blue) transparent transparent transparent;
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress.project .progress span::after {
+    border-color: var(--dark-orange) transparent transparent transparent;
+}
+
+.text .Target .box-content .yearlyTarget .target-Progress.team .progress span::after {
+    border-color: var(--dark-green) transparent transparent transparent;
+}
+
+/* End Content - Text Yearly Targets */
+
+/* Start Content Text Tickets */
+.text .box.tickets .content {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+    gap: 20px;
+    align-items: center;
+    padding-bottom: 20px;
+}
+
+.text .box.tickets .content .inner-content {
+    padding: 10px 0;
+    border: 1px solid var(--border);
+}
+
+.text .box.tickets .content .inner-content i {
+    margin: auto;
+}
+
+.text .box.tickets .content .inner-content span {
+    margin-top: 7px;
+}
+
+/* End Content Text Tickets */
+
+/* Start Content Text News */
+.text .box.news .content {
+    padding-bottom: 12px;
+}
+
+.text .box.news .content:not(:last-child) {
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.text .box.news .content .inner-content {
+    display: flex;
+    align-items: center;
+}
+
+.text .box.news .content .inner-content .box-text p {
+    margin-top: -6px;
+}
+
+.text .box.news .content .inner-content img {
+    width: 65px;
+    margin-right: 8px;
+    border-radius: 5px;
+}
+
+/* End Content Text News */
+
+/* Start Content Text LatestTasks */
+.text .box.tasks .content:nth-child(5) {
+    opacity: 0.2;
+}
+
+.text .box.tasks .content:not(:last-child) {
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.text .box.tasks .content i {
+    font-size: 15px;
+}
+
+.text .box.tasks .content .inner-content p:last-child {
+    margin-top: -8px;
+}
+
+/* End Content Text LatestTasks */
+
+/* Start Content Text Top SearchItems */
+.text .box.searchItems .content ul li {
+    margin: 20px 0;
+    padding: 5px;
+    font-size: 14px;
+}
+
+.text .box.searchItems .content ul:last-child li {
+    background-color: var(--color-grey);
+    font-size: 12px;
+    border-radius: 6px;
+}
+
+/* End Content Text Top-SearchItems */
+
+/* Start Content Text Latest-Uploads */
+.text .box.uploads .content:not(:last-child) {
+    padding-bottom: 8px;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.text .box.uploads .content .inner-content img {
+    width: 40px;
+    margin-right: 7px;
+}
+
+/* End Content Text Latest-Uploads */
+
+/* Start Content Text Last-Project-Progress */
+.text .box.progress ul::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    width: 2px;
+    height: 100%;
+    background-color: var(--dark-blue);
+}
+
+.text .box.progress ul li::before {
+    content: "";
+    width: 20px;
+    height: 20px;
+    display: block;
+    border-radius: 50%;
+    background-color: white;
+    border: 2px solid white;
+    outline: 2px solid var(--dark-blue);
+    margin-right: 15px;
+    z-index: 1;
+}
+
+.text .box.progress ul li.done::before {
+    background-color: var(--dark-blue);
+}
+
+.text .box.progress ul li.current::before {
+    animation: change-color .8s infinite alternate;
+}
+
+@keyframes change-color {
+    from {
+        background-color: var(--dark-blue);
+    }
+
+    to {
+        background-color: var(--light-blue);
+    }
+}
+
+.text .box.progress .launch-icon {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    width: 160px;
+    opacity: 0.1;
+}
+
+/* End Content Text Last-Project-Progress */
+
+/* Start Content Text Reminders */
+.text .box.reminders .content {
+    margin-left: 30px;
+}
+
+.text .box.reminders .content::before {
+    position: absolute;
+    content: "";
+    width: 2px;
+    height: calc(100% + 4px);
+    left: -15px;
+    top: -2px;
+}
+
+.text .box.reminders .content.first::before {
+    background-color: var(--dark-blue);
+}
+
+.text .box.reminders .content.second::before {
+    background-color: var(--dark-orange);
+}
+
+.text .box.reminders .content.third::before {
+    background-color: var(--dark-green);
+}
+
+.text .box.reminders .content.fourth::before {
+    background-color: red;
+}
+
+.text .box.reminders .content::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    top: 14px;
+    left: -35px;
+}
+
+.text .box.reminders .content.first::after {
+    background-color: var(--dark-blue);
+}
+
+.text .box.reminders .content.second::after {
+    background-color: var(--dark-orange);
+}
+
+.text .box.reminders .content.third::after {
+    background-color: var(--dark-green);
+}
+
+.text .box.reminders .content.fourth::after {
+    background-color: red;
+}
+
+.text .box.reminders .content span {
+    margin-top: -10px;
+}
+
+/* End Content Text Reminders */
+
+/* Start Content Text Latest-Post */
+.text .box.post .header,
+.text .box.post p {
+    padding-bottom: 12px;
+    border-bottom: 1px solid var(--color-grey);
+}
+
+.text .box.post .header img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: relative;
+    margin-right: 8px;
+}
+
+.text .box.post .header span {
+    margin-top: -12px;
+}
+
+.text .box.post .bottom .comment span {
+    margin-left: -12px;
+}
+
+/* End Content Text Latest-Post */
+
+/* Start Content Text socialMedia */
+.text .box.socialMedia .info {
+    margin-bottom: 10px;
+}
+
+.text .box.socialMedia .info .info-text .icon {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+}
+
+.text .box.socialMedia .info .info-text .icon i {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* End Content Text socialMedia */
+
+/* Start Content Project-box */
+.project-box .responsive-table {
+    /* overflow-x: auto; */
+}
+
+.project-box table {
+    /* min-width: 1000px; */
+}
+
+.project-box table tbody tr td img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: 1px solid white;
+    padding: 2px;
+}
+
+.project-box table tbody tr td img:not(:first-child) {
+    margin-left: -18px;
+}
+
+.project-box table,
+.project-box table th,
+.project-box table td {
+    border: 1px solid var(--color-grey);
+    border-collapse: collapse;
+}
+
+.project-box table th {
+    height: 40px;
+    text-align: left;
+    padding-left: 10px;
+    font-size: 14px;
+    background-color: var(--color-grey);
+}
+
+.project-box table td {
+    font-size: 12px;
+    padding: 10px;
+}
+
+.project-box table tr:hover td {
+    background-color: #faf7f7;
+}
+
+/* End Content Text Projects */
